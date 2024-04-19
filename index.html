@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo List</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="contents">
+		<div class="input-wrapper">
+			<div class="input-area">
+				<input id="add-text" placeholder="Please enter Todo">
+				<button id="add-btn">Add</button>
+			</div>
+		</div>
+		<div class="incomplete-area">
+			<p class="title">Incompleted List</p>
+			<ul id="incomplete-list">
+				<li>
+					<div class="list-row">
+						<p class="todo-item">Sample Todo</p>
+						<button>Done</button>
+						<button>Delete</button>
+					</div>
+				</li>
+				<li>
+					<div class="list-row">
+						<p class="todo-item">Sample Todo</p>
+						<button>Done</button>
+						<button>Delete</button>
+					</div>
+				</li>
+				<li>
+					<div class="list-row">
+						<p class="todo-item">Sample Todo</p>
+						<button>Done</button>
+						<button>Delete</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="complete-area">
+			<p class="title">Completed List</p>
+			<ul id="complete-list">
+				<li>
+					<div class="list-row">
+						<p class="todo-item">Todo</p>
+						<button>Restore</button>
+						<button>Delete</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="./index.js"></script>
+</body>
+</html>

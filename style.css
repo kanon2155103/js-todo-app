@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+li, p {
+  color: #374041;
+}
+
+.contents {
+  margin: 1rem 0.5rem;
+}
+
+.input-wrapper {
+  background-color: #c6e5d9;
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #fff calc(100% - 1px)), linear-gradient(90deg, transparent calc(100% - 1px), #fff calc(100% - 1px));
+  background-size: 2rem 2rem;
+  background-repeat: repeat;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+.input-wrapper .input-area {
+  max-width: 920px;
+  margin: auto;
+}
+.input-wrapper input {
+  height: 2rem;
+  min-width: 40%;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.4em 1.2em;
+  letter-spacing: 0.04em;
+  color: #374041;
+}
+.input-wrapper input:focus {
+  outline: 2px solid rgba(55, 64, 65, 0.2);
+}
+.input-wrapper button {
+  height: 2rem;
+  border: none;
+  padding: 0.4em 1.2em;
+  letter-spacing: 0.02em;
+  color: #6a9c9d;
+  border-radius: 0.6rem;
+}
+.input-wrapper button:hover {
+  background-color: #6a9c9d;
+  color: #fff;
+}
+
+.incomplete-area {
+  border: 2px solid #aacfd0;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  max-width: 920px;
+  min-height: 30vh;
+}
+.incomplete-area button {
+  height: 2rem;
+  border: none;
+  padding: 0.4em 1.2em;
+  letter-spacing: 0.02em;
+  color: #6a9c9d;
+  height: 2.2em;
+  padding: 0.4em 0.8em;
+  margin: 0 0.18rem;
+  border-radius: 1rem;
+}
+.incomplete-area button:hover {
+  background-color: #6a9c9d;
+  color: #fff;
+}
+.incomplete-area .title {
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+}
+.incomplete-area .list-row {
+  display: flex;
+  align-items: center;
+}
+.incomplete-area .todo-item {
+  margin: 0.6rem;
+  letter-spacing: 0.04em;
+}
+
+.complete-area {
+  border: 2px solid #aacfd0;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  max-width: 920px;
+  min-height: 30vh;
+  background-color: #c9dede;
+}
+.complete-area button {
+  height: 2rem;
+  border: none;
+  padding: 0.4em 1.2em;
+  letter-spacing: 0.02em;
+  color: #6a9c9d;
+  height: 2.2em;
+  padding: 0.4em 0.8em;
+  margin: 0 0.18rem;
+  border-radius: 1rem;
+}
+.complete-area button:hover {
+  background-color: #6a9c9d;
+  color: #fff;
+}
+.complete-area .title {
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+}
+.complete-area .list-row {
+  display: flex;
+  align-items: center;
+}
+.complete-area .todo-item {
+  margin: 0.6rem;
+  letter-spacing: 0.04em;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,108 @@
+$nomal-btn: #6a9c9d;
+$black: #374041;
+$white: #fff;
+
+$item-width: 920px;
+
+* {
+	box-sizing: border-box;
+}
+
+li, p {
+	color: $black;
+}
+
+@mixin button($btn-color){
+	height: 2rem;
+	border: none;
+	padding: 0.4em 1.2em;
+	letter-spacing: 0.02em;
+	color: $btn-color;
+
+	&:hover {
+		background-color: $btn-color;
+		color: $white;
+	}
+}
+
+.contents {
+	margin: 1rem 0.5rem;
+}
+
+.input-wrapper {
+	background-color: #c6e5d9;
+	background-image: linear-gradient(0deg, transparent calc(100% - 1px), $white calc(100% - 1px)),
+	linear-gradient(90deg, transparent calc(100% - 1px), $white calc(100% - 1px));
+	background-size: 2rem 2rem;
+	background-repeat: repeat;
+	padding: 1rem;
+	margin: 1rem 0;
+	border-radius: 0.5rem;
+
+	& .input-area {
+		max-width: $item-width;
+		margin: auto;
+	}
+
+	& input {
+		height: 2rem;
+		min-width: 40%;
+		border-radius: 0.5rem;
+		border: none;
+		padding: 0.4em 1.2em;
+		letter-spacing: 0.04em;
+		color:$black;
+
+		&:focus {
+			outline: 2px solid rgba($black, 0.2);
+		}
+	}
+
+	& button {
+		@include button($nomal-btn);
+		border-radius: 0.6rem;
+	}
+}
+
+@mixin list-area() {
+	border: 2px solid #aacfd0;
+	padding: 1rem;
+	margin: 2rem auto;
+	border-radius: 0.5rem;
+	max-width: $item-width;
+	min-height: 30vh;
+
+	& button {
+		@include button($nomal-btn);
+		height: 2.2em;
+		padding: 0.4em 0.8em;
+		margin: 0 0.18rem;
+		border-radius: 1rem;
+	}
+
+	& .title {
+		text-align: center;
+		margin-top: 0;
+		font-weight: bold;
+		letter-spacing: 0.06em;
+	}
+
+	& .list-row {
+		display: flex;
+		align-items: center;
+	}
+
+	& .todo-item {
+		margin: 0.6rem;
+		letter-spacing: 0.04em;
+	}
+}
+
+.incomplete-area {
+	@include list-area();
+}
+
+.complete-area {
+	@include list-area();
+	background-color: #c9dede;
+}
